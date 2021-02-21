@@ -13,18 +13,29 @@ const activeLinks = document.querySelectorAll('.titles a.active');
 for(let activeLink of activeLinks){
   activeLink.classList.remove('active');
 }
-  /* [IN PRPOGRESS]add class 'active' to the clicked link */
-  this.classList.add('active');
-  console.log('clickedElement:', clickedElement);
+  /* [DONE] add class 'active' to the clicked link */
+this.classList.add('active');
+console.log('clickedElement:', clickedElement);
 
   /* [DONE] remove class 'active' from all articles */
+const activeArticles = document.querySelectorAll('.posts .active');
 
-  /* get 'href' attribute from the clicked link */
+for(let activeArticle of activeArticles){
+  activeArticle.classList.remove('active');
+}
+  /* [DONE] get 'href' attribute from the clicked link */
+const articleSelector = this.getAttribute('href');
 
   /* find the correct article using the selector (value of 'href' attribute) */
+const targetArticle = document.querySelector();
+console.log('targetArticle');
 
   /* add class 'active' to the correct article */
+
+
+
 }
+console.log(titleClickHandler);
 
 const links = document.querySelectorAll('.titles a');
 
