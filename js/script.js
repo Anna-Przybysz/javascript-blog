@@ -1,6 +1,6 @@
 const optArticleSelector = '.post',
-    optTitleSelector = '.post-title',
-    optTitleListSelector = '.titles';
+  optTitleSelector = '.post-title',
+  optTitleListSelector = '.titles';
 
 const titleClickHandler = function(event){
   event.preventDefault();
@@ -29,7 +29,7 @@ const titleClickHandler = function(event){
 
   /* [DONE] add class 'active' to the correct article */
   targetArticle.classList.add('active');
-}
+};
 
 function generateTitleLinks(){
 
@@ -47,7 +47,7 @@ function generateTitleLinks(){
     const articleTitle = article.querySelector(optTitleSelector).innerText;
 
     /* create HTML of the link */
-    const link = `<li><a href="#${articleId}"><span>${articleTitle}</span></a></li>`
+    const link = `<li><a href="#${articleId}"><span>${articleTitle}</span></a></li>`;
 
     /* insert link into titleList */
     html += link;
