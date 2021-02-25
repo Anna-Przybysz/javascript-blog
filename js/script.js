@@ -1,7 +1,7 @@
 const optArticleSelector = '.post',
   optTitleSelector = '.post-title',
   optTitleListSelector = '.titles';
-  const optArticleTagsSelector = '.post-tags .list';
+const optArticleTagsSelector = '.post-tags .list';
 
 const titleClickHandler = function(event){
   event.preventDefault();
@@ -76,7 +76,7 @@ function generateTags(){
     let html = '';
     
     /* get tags from data-tags attribute */
-    const articleTags = article.getAttribute('.data-tags');
+    const articleTags = article.getAttribute('data-tags');
     
     /* split tags into array */
     const articleTagsArray = articleTags.split(' ');
@@ -85,8 +85,8 @@ function generateTags(){
     for (let tag of articleTagsArray) {
 
       /* generate HTML of the link */
-      const link = `<li><a href="#${articleTags}</a></li>`;
-      console.log();
+      const link = `<li><a href="#${tag}"></a></li>`;
+      console.log(link);
       /* add generated code to html variable */
   
     
