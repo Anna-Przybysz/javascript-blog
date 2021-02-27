@@ -71,7 +71,7 @@ function generateTags(){
   for (const article of articles) {
   
     /* find tags wrapper */
-    const titleList = article.querySelector(optArticleTagsSelector);
+    const tagsWrapper = article.querySelector(optArticleTagsSelector);
     /* make html variable with empty string */
     let html = '';
     
@@ -85,15 +85,17 @@ function generateTags(){
     for (let tag of articleTagsArray) {
 
       /* generate HTML of the link */
-      const link = `<li><a href="#${tag}"></a></li>`;
-      console.log(link);
+      const link = `<li><a href="#tag-${tag}">${tag}</a></li>`;
+      html += link;
       /* add generated code to html variable */
-  
+      
     
     /* END LOOP: for each tag */
     }
+    tagsWrapper.innerHTML = html
     /* insert HTML of all the links into the tags wrapper */
-
+    
+    
   /* END LOOP: for every article: */
   }
 }
