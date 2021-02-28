@@ -43,3 +43,7 @@ body { background: #fff; font-family: "Source Sans Pro", sans-serif; color: #444
 .post-tags { display: -ms-flexbox; display: flex; }
 
 .post-tags p { margin: 0 10px 0 0; }
+
+.post-tags a {
+    margin: 0 10px 0 0;
+}

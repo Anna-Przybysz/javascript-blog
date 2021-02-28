@@ -86,15 +86,15 @@ function generateTags(){
 
       /* generate HTML of the link */
       const link = `<li><a href="#tag-${tag}">${tag}</a></li>`;
-      html += link;
-      /* add generated code to html variable */
       
+      /* add generated code to html variable */
+      html += link;
     
     /* END LOOP: for each tag */
     }
-    tagsWrapper.innerHTML = html
-    /* insert HTML of all the links into the tags wrapper */
     
+    /* insert HTML of all the links into the tags wrapper */
+    tagsWrapper.innerHTML = html
     
   /* END LOOP: for every article: */
   }
